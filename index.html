@@ -1,11 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rigi Assignment</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo_1">Logo</div>
+      <div class="hamburger_icons">
+        <div class="nav_1" id="nav_1"></div>
+        <div class="nav_2" id="nav_2"></div>
+        <div class="nav_3" id="nav_3"></div>
+      </div>
+      <nav class="navbar">
+        <div>
+          <a href="" class="navbar_active">Join Community</a>
+          <a href="">Contact Us</a>
+        </div>
+      </nav>
+    </header>
+
+    <div id="main_heading">
+      <div class="sub_heading">
+        <div>
+          <h1>Hack your wealth journey inside the 1% club</h1>
+
+          <p>
+            A super premium annual subscription that will transform your wealth
+            planning and make you say -“Bro! I’m financially sorted!”
+          </p>
+
+          <button>Join the Community</button>
+        </div>
+      </div>
+
+      <div class="head_Img">
+        <div><img src="/" alt="" /></div>
+      </div>
+
+      <button class="smallBtn">Join the Community</button>
+    </div>
+
+    <div id="feat_section">
+      <p>Featured In</p>
+      <div class="firstSec">
+        <h1>Forbes</h1>
+        <div>
+          <p>THE</p>
+          <p>ECONOMIC</p>
+          <p>TIMES</p>
+        </div>
+        <h1>mint</h1>
+      </div>
+      <div class="sec_Sec">
+        <h1>THE TIMES OF INDIA</h1>
+        <h1>Forbes</h1>
+      </div>
+    </div>
+
+    <div class="about_sec">
+      <p>About Me</p>
+      <div>
+        <h2>Entrepreneur, content creator, Finance Influencer</h2>
+      </div>
+
+      <div class="middle_Img">
+        <img src="/" alt="" />
+      </div>
+
+      <div class="para">
+        <p>
+          Hi, I'm Finance With Sharan. I’m a former management consultant at
+          KPMG and PwC where I worked with banks and NBFCs to help them make a
+          ton of money.
+        </p>
+        <p>
+          I now work as a full-time content creator and help the common man make
+          a ton of money.
+        </p>
+        <p>
+          I create engaging personal finance content with a blend of comedic
+          flavor and cosplay on Instagram and YouTube. I also write down highly
+          action oriented posts on LinkedIn and Twitter for those who are not on
+          social media platforms and prefer to read it instead
+        </p>
+      </div>
+
+      <div class="socialIcons">
+        <img src="/" alt="Instagram" />
+        <img src="/" alt="Facebook" />
+        <img src="/" alt="LinkedIn" />
+        <img src="/" alt="Twitter" />
+        <img src="/" alt="YouTube" />
+      </div>
+    </div>
+  </body>
 </html>
+<script>
+  let ham_icon = document.querySelector(".hamb_icon");
+
+hamb_icon.addEventListener("click", () => {
+ let navBar = document.querySelector(".navbar");
+  navBar.classList.toggle("active");
+
+ 
+  document.querySelector("#nav_1").classList.toggle("nav_1");
+  document.querySelector("#nav_2").classList.toggle("nav_2");
+  document.querySelector("#nav_3").classList.toggle("nav_3");
+});
+</script>
